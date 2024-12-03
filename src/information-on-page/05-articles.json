@@ -1,0 +1,31 @@
+[
+  {
+    "id": "1",
+    "articles": [
+      {
+        "title": "Creating Engaging Pixel Art Animations",
+        "description": "A detailed guide on creating fluid animations for 2D games using Aseprite",
+        "image": "./images/articles/article-1.png",
+        "date": "2024-02-01",
+        "link": "blog.example.com/pixel-art-animation-guide",
+        "tags": ["Pixel Art", "Animation", "Tutorial"]
+      },
+      {
+        "title": "My First Year as an Indie Dev",
+        "description": "Lessons learned, challenges faced, and successes celebrated in my journey as an independent game developer",
+        "image": "./images/articles/article-2.png",
+        "date": "2024-01-15",
+        "link": "blog.example.com/first-year-indie-dev",
+        "tags": ["Game Dev", "Career", "Indie"]
+      },
+      {
+        "title": "Implementing Procedural Generation in Unity",
+        "description": "Technical breakdown of the procedural generation system used in Pixel Dungeons",
+        "image": "./images/articles/article-3.png",
+        "date": "2023-12-20",
+        "link": "blog.example.com/procedural-generation-unity",
+        "tags": ["Unity", "Technical", "Tutorial"]
+      }
+    ]
+  }
+]

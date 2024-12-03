@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "navigation": {
+      "navLinks": ["About", "Resume", "Portfolio", "Articles", "Contacts"]
+    },
+    "hero": {
+      "name": "David Rivers",
+      "role": "Game Developer",
+      "image": "/images/hero-image.jpg",
+      "subtitle": "Crafting unique gaming experiences with creativity",
+      "videoGreeting": "https://www.youtube.com/watch?v=BBJa32lCaaY"
+    },
+    "contactInfo": {
+      "phone": "Game Developer & Pixel Artist",
+      "email": "exampledavidrivers@gmail.com",
+      "location": "Portland, Oregon"
+    },
+    "fotterInfo": {
+      "fotterCallToAction": "Get in touch",
+      "fotterDescription": "Thank you very much for your attention ! Follow me on social media and don't forget to visit my blog I post a lot of interesting things about games and not only."
+    },
+    "socialLinks": {
+      "linkedin": "www.linkedin.com/in/exampledavidrivers",
+      "github": "github.com/exampledavidrivers",
+      "x": "x.com/example_davidrivers_dev",
+      "telegram": "t.me/exampledavidrivers",
+      "wechat": "exampledavidrivers",
+      "viber": "viber.com/exampledavidrivers"
+    }
+  }
+]

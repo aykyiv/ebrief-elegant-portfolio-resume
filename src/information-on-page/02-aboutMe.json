@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "knowMe": {
+      "description": "I'm an independent game developer with a passion for creating unique pixel art games. After graduating in Computer Science, I decided to pursue my dream of making games that combine nostalgic aesthetics with modern gameplay mechanics. I love creating immersive experiences that tell meaningful stories."
+    },
+    "whatIDo": [
+      {
+        "title": "Game Development",
+        "description": "Design and develop 2D games using Unity and Godot engines with focus on engaging gameplay mechanics",
+        "icon": "gamepad"
+      },
+      {
+        "title": "Pixel Art & Animation",
+        "description": "Create charming pixel art assets and fluid animations for retro-style games",
+        "icon": "brush"
+      },
+      {
+        "title": "Sound Design",
+        "description": "Compose chiptune music and create retro-style sound effects for enhanced game feel",
+        "icon": "music"
+      },
+      {
+        "title": "Community Building",
+        "description": "Engage with players through Discord and social media, gathering feedback and building a community",
+        "icon": "users"
+      }
+    ]
+  }
+]

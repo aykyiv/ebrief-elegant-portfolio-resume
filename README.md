@@ -1,4 +1,4 @@
-# 🖥️ Online Resume/Portfolio SPA Template
+# 🖥️ eBrief Portfolio / Resume SPA Template
 
 A sleek and lightweight single-page application template built with **TypeScript**, **Next.js**, **TailwindCSS**, and **shadcn**. Designed to help digital professionals save time by providing an elegant, ready-to-use portfolio or resume showcase that is **easy to customize** and **ready to deploy**.
 

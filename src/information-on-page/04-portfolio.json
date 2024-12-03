@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "filters": ["All", "Released Games", "Game Jams", "Prototypes", "Art"],
+    "projects": [
+      {
+        "name": "Pixel Dungeons: Forgotten Realms",
+        "category": "Released Games",
+        "description": "A roguelike dungeon crawler with procedurally generated levels and unique pixel art style. Available on Steam with Very Positive reviews.",
+        "technologies": ["Unity", "C#", "Aseprite", "BFXR"],
+        "github": "github.com/exampledavidrivers/pixel-dungeons",
+
+        "image": "./images/portfolio/game-1.png"
+      },
+      {
+        "name": "Time Loop Tales",
+        "category": "Game Jams",
+        "description": "A puzzle platformer made in 48 hours for Ludum Dare 52. Player manipulates time to solve environmental puzzles.",
+        "technologies": ["Godot", "GDScript", "Piskel"],
+        "github": "github.com/exampledavidrivers/time-loop-tales",
+        "image": "./images/portfolio/game-2.png"
+      },
+      {
+        "name": "Cyber Pets",
+        "category": "Prototypes",
+        "description": "A virtual pet game with cyberpunk aesthetics. Currently in development with regular devlog updates.",
+        "technologies": ["GameMaker Studio 2", "GML", "Aseprite"],
+        "github": "github.com/exampledavidrivers/cyber-pets",
+        "image": "./images/portfolio/game-3.png"
+      }
+    ]
+  }
+]

@@ -17,7 +17,7 @@ const unbounded = Unbounded({
 const roboto = Roboto_Slab({
   subsets: ['latin'],
   weight: ['400', '800'],
-  variable: '--font-roboto',
+  variable: '--font-roboto-slab',
   display: 'swap',
 });
 

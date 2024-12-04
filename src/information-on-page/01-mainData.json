@@ -4,15 +4,17 @@
     "navigation": {
       "navLinks": ["About", "Resume", "Portfolio", "Articles", "Contacts"]
     },
+
     "hero": {
       "name": "David Rivers",
       "role": "Game Developer",
       "image": "/images/hero-image.jpg",
       "subtitle": "Crafting unique gaming experiences with creativity",
-      "videoGreeting": "https://www.youtube.com/watch?v=BBJa32lCaaY"
+      "videoGreeting": "https://www.youtube.com/watch?v=BBJa32lCaaY",
+      "videoButtonText": "Video Intro"
     },
     "contactInfo": {
-      "phone": "Game Developer & Pixel Artist",
+      "phone": "+1 (123) 456-7890",
       "email": "exampledavidrivers@gmail.com",
       "location": "Portland, Oregon"
     },

@@ -1,11 +1,14 @@
 import React from 'react'
+import { AboutSection } from './sections/components/AboutSection'
+import aboutMeData from '../information-on-page/02-aboutMe.json'
 
 function RightSideContent() {
   return (
     <div className=' w-full h-full  flex flex-col gap-10 mx-auto'>
-        {Array.from({ length: 4 }, (_, index) => (
-          <div key={index} className='w-full h-[400px] bg-neutral-200 rounded-md'></div>
-        ))}
+       
+        <AboutSection aboutMeData={aboutMeData[0]}/>
+        <AboutSection aboutMeData={aboutMeData[0]}/>
+        <AboutSection aboutMeData={aboutMeData[0]}/>
 
     </div>
   )

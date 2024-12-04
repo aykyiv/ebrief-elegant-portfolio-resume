@@ -7,14 +7,15 @@ export interface IHero {
   name: string;
   role: string;
   image: string;
-  subtitle: string;
-  videoGreeting: string;
+  subtitle?: string;
+  videoGreeting?: string;
+  videoButtonText?: string;
 }
 
 export interface IContactInfo {
-  phone: string;
-  email: string;
-  location: string;
+  phone?: string;
+  email?: string;
+  location?: string;
 }
 
 export interface IFotterInfo {
@@ -23,12 +24,12 @@ export interface IFotterInfo {
 }
 
 export interface ISocialLinks {
-  linkedin: string;
-  github: string;
-  x: string;
-  telegram: string;
-  wechat: string;
-  viber: string;
+  linkedin?: string;
+  github?: string;
+  x?: string;
+  telegram?: string;
+  wechat?: string;
+  viber?: string;
 }
 
 export interface IMainData {

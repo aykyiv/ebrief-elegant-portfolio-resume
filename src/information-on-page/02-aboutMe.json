@@ -1,6 +1,9 @@
 [
   {
     "id": "1",
+    "title": "About Me",
+    "knowMeTitle": "Know Me",
+    "whatIDoTitle": "What I Do",
     "knowMe": {
       "description": "I'm an independent game developer with a passion for creating unique pixel art games. After graduating in Computer Science, I decided to pursue my dream of making games that combine nostalgic aesthetics with modern gameplay mechanics. I love creating immersive experiences that tell meaningful stories."
     },

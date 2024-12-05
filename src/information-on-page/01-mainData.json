@@ -2,7 +2,13 @@
   {
     "id": "1",
     "navigation": {
-      "navLinks": ["About", "Resume", "Portfolio", "Articles", "Contacts"]
+      "navLinks": [
+        { "title": "About", "url": "#about" },
+        { "title": "Resume", "url": "#resume" },
+        { "title": "Portfolio", "url": "#portfolio" },
+        { "title": "Articles", "url": "#articles" },
+        { "title": "Contacts", "url": "#contacts" }
+      ]
     },
 
     "hero": {
@@ -18,9 +24,9 @@
       "email": "exampledavidrivers@gmail.com",
       "location": "Portland, Oregon"
     },
-    "fotterInfo": {
-      "fotterCallToAction": "Get in touch",
-      "fotterDescription": "Thank you very much for your attention ! Follow me on social media and don't forget to visit my blog I post a lot of interesting things about games and not only."
+    "footerInfo": {
+      "title": "Get in touch",
+      "description": "Thank you very much for your attention ! Follow me on social media and don't forget to visit my blog I post a lot of interesting things about games and not only."
     },
     "socialLinks": {
       "linkedin": "www.linkedin.com/in/exampledavidrivers",

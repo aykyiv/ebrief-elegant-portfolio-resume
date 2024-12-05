@@ -14,10 +14,23 @@
 
 }
 
-export interface ServiceCardProps {
+export interface IServiceCardProps {
     title: string;
     description: string;
     icon: string;
     className?: string;
     index: number;
   }
+
+  export interface ISubSectionProps {
+    title: string;
+    children: React.ReactNode;
+    className?: string;
+  }
+
+  export interface IMainSectionProps {
+    title: string;
+    children: React.ReactNode;
+    className?: string;
+  }
+

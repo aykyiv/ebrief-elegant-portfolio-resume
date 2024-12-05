@@ -1,10 +1,7 @@
-interface SubSectionProps {
-  title: string;
-  children: React.ReactNode;
-  className?: string;
-}
+import { ISubSectionProps } from "@/interfaces/IWhatIDo";
 
-export function SubSection({ title, children, className }: SubSectionProps) {
+
+export function SubSection({ title, children, className }: ISubSectionProps) {
   return (
     <div className={` flex flex-col gap-4 ${className} bg-white rounded-sm p-6 border-white border-2 shadow-inner`}>
       <div className="relative  font-medium text-fonts mb-4">

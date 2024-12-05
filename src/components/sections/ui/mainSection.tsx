@@ -1,10 +1,7 @@
-interface SectionProps {
-  title: string;
-  children: React.ReactNode;
-  className?: string;
-}
+import { IMainSectionProps } from "@/interfaces/IWhatIDo";
 
-export function MainSection({ title, children, className }: SectionProps) {
+
+export function MainSection({ title, children, className }: IMainSectionProps) {
   return (
     <section className={`w-full max-w-4xl mx-auto flex flex-col gap-7 py-8 ${className}`}>
       <div className="flex flex-row items-center ">

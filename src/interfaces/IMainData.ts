@@ -1,9 +1,8 @@
-
-export interface INavigation {
-  navLinks: string[];
+interface INavigation {
+  navLinks: { title: string; url: string }[];
 }
 
-export interface IHero {
+interface IHero {
   name: string;
   role: string;
   image: string;
@@ -12,18 +11,18 @@ export interface IHero {
   videoButtonText?: string;
 }
 
-export interface IContactInfo {
+interface IContactInfo {
   phone?: string;
   email?: string;
   location?: string;
 }
 
-export interface IFotterInfo {
-  fotterCallToAction: string;
-  fotterDescription: string;
+interface IFooterInfo {
+  title: string;
+  description: string;
 }
 
-export interface ISocialLinks {
+interface ISocialLinks {
   linkedin?: string;
   github?: string;
   x?: string;
@@ -37,6 +36,6 @@ export interface IMainData {
   navigation: INavigation;
   hero: IHero;
   contactInfo: IContactInfo;
-  fotterInfo: IFotterInfo;
+  footerInfo: IFooterInfo;
   socialLinks: ISocialLinks;
 }

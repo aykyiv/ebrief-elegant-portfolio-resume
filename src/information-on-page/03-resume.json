@@ -1,22 +1,24 @@
 [
-    {
-      "id": "1",
+  {
+    "id": "1",
     "education": [
       {
-        "institution": "Portland State University",
-        "period": "2018 - 2022",
-        "description": "Focus on Game Development and Interactive Media"
+        "concentration": "Drawing Concentration",
+        "institution": "New York Academy of Art",
+        "years": "2015 - 2016"
       },
       {
-        "institution": "Online Game Development Academy",
-        "period": "2021",
-        "description": "Specialized in 2D Game Design and Pixel Art"
+        "specialization": "UI/UX Design Specialization",
+        "institution": "California Institute of Arts",
+        "years": "2016 - 2020"
       }
     ],
     "experience": [
       {
         "role": "Independent Game Developer",
+        "company": "Self-employed",
         "period": "2022 - Present",
+        "description": "As an Independent Game Developer, I've taken the initiative to develop and publish three indie games on major platforms like Steam and itch.io.My role encompasses creating original pixel art assets and animations, implementing intricate game mechanics and systems using Unity and Godot, and actively managing community engagement and player feedback to ensure a high-quality gaming experience. Working independently has honed my skills in project management, creativity, and technical execution.",
         "responsibilities": [
           "Developed and published 3 indie games on Steam and itch.io",
           "Created original pixel art assets and animations",
@@ -24,9 +26,12 @@
           "Managed community engagement and player feedback"
         ]
       },
+
       {
         "role": "Game Development Intern",
+        "company": "Local Indie Studio",
         "period": "Summer 2021",
+        "description": "During my internship at Local Indie Studio, I contributed to the development of game prototypes, created pixel art assets for mobile games, and actively participated in game design meetings and playtesting sessions. My role was essential in assisting the team in transforming creative concepts into engaging game content.",
         "responsibilities": [
           "Assisted in developing game prototypes",
           "Created pixel art assets for mobile games",
@@ -50,41 +55,80 @@
         "certDescription": "Comprehensive certification in pixel art techniques, covering sprite design, animation, and retro game graphic development."
       }
     ],
-    "skills": {
-      "engines": ["Unity", "Godot", "GameMaker Studio 2"],
-      "programming": ["C#", "GDScript", "Lua", "JavaScript"],
-      "art": ["Aseprite", "Piskel", "PyxelEdit", "Graphics Gale"],
-      "audio": ["FL Studio", "BFXR", "Audacity", "FamiTracker"],
-      "tools": ["Git", "Trello", "Adobe Photoshop", "Tiled Map Editor"]
-    },
+    "skills": [
+      {
+        "category": "Engines",
+        "icon": "/images/icons/engine.svg",
+        "tools": ["Unity", "Godot", "GameMaker Studio 2"],
+        "proficiency": 85
+      },
+      {
+        "category": "Art",
+        "icon": "/images/icons/brush.svg",
+        "tools": ["Aseprite", "Piskel", "PyxelEdit", "Graphics Gale"],
+        "proficiency": 80
+      },
+      {
+        "category": "Programming",
+        "icon": "/images/icons/programming.svg",
+        "tools": ["C#", "GDScript", "Lua", "JavaScript"],
+        "proficiency": 75
+      },
+      {
+        "category": "Audio",
+        "icon": "/images/icons/music.svg",
+        "tools": ["FL Studio", "BFXR", "Audacity", "FamiTracker"],
+        "proficiency": 45
+      },
+      {
+        "category": "Tools",
+        "icon": "/images/icons/tools.svg",
+        "tools": ["Git", "Trello", "Adobe Photoshop", "Tiled Map Editor"],
+        "proficiency": 95
+      }
+    ],
+
     "skillsCarusel": [
       {
         "skill": "Unity",
-        "image": "./images/skills-carusel/unity.png"
+        "image": "/images/icons/carousel/aseprite.svg"
+      },
+      {
+        "skill": "Unity",
+        "image": "/images/icons/carousel/unity.svg"
       },
       {
         "skill": "C#",
-        "image": "./images/skills-carusel/csharp.png"
+        "image": "/images/icons/carousel/cplusplus.svg"
       },
       {
         "skill": "GDScript",
-        "image": "./images/skills-carusel/gdscript.png"
+        "image": "/images/icons/carousel/steam.svg"
+      },
+      {
+        "skill": "GDScript",
+        "image": "/images/icons/carousel/godotengine.svg"
       },
       {
         "skill": "Aseprite",
-        "image": "./images/skills-carusel/aseprite.png"
+        "image": "/images/icons/carousel/nsis.svg"
       },
       {
         "skill": "Piskel",
-        "image": "./images/skills-carusel/piskel.png"
+        "image": "/images/icons/carousel/pixelfed.svg"
       },
       {
         "skill": "PyxelEdit",
-        "image": "./images/skills-carusel/pyxel-edit.png"
+        "image": "/images/icons/carousel/scratch.svg"
+      },
+
+      {
+        "skill": "Graphics Gale",
+        "image": "/images/icons/carousel/sega.svg"
       },
       {
         "skill": "Graphics Gale",
-        "image": "./images/skills-carusel/graphics-gale.png"
+        "image": "/images/icons/carousel/taichigraphics.svg"
       }
     ]
   }

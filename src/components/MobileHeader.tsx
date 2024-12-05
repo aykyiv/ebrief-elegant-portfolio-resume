@@ -13,9 +13,9 @@ import {
 } from "@/components/ui/sheet";
 import { Menu, Phone, Mail, MapPin } from "lucide-react";
 
-import { IMainData } from "@/interfaces/IMainData";
 import SocialLinks from "./social-links/SocialLinks";
 import youtube from "../../public/images/icons/youtube.svg";
+import { IMainData } from "@/interfaces/IMainData";
 
 export default function MobileHeader({ mainData }: { mainData: IMainData }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,12 +101,12 @@ export default function MobileHeader({ mainData }: { mainData: IMainData }) {
             <nav className=" max-w-[300px] mx-auto">
               {mainData.navigation.navLinks.map((link) => (
                 <Link
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+                  key={link.title}
+                  href={`#${link.url}`}
                   className="block py-2 text-fonts hover:text-pr transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
-                  {link}
+                  {link.title}
                 </Link>
               ))}
             </nav>

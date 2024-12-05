@@ -11,22 +11,22 @@
       {
         "title": "Game Development",
         "description": "Design and develop 2D games using Unity and Godot engines with focus on engaging gameplay mechanics",
-        "icon": "gamepad"
+        "icon": "/images/icons/gamepad.svg"
       },
       {
         "title": "Pixel Art & Animation",
         "description": "Create charming pixel art assets and fluid animations for retro-style games",
-        "icon": "brush"
+        "icon": "/images/icons/brush.svg"
       },
       {
         "title": "Sound Design",
         "description": "Compose chiptune music and create retro-style sound effects for enhanced game feel",
-        "icon": "music"
+        "icon": "/images/icons/music.svg"
       },
       {
         "title": "Community Building",
         "description": "Engage with players through Discord and social media, gathering feedback and building a community",
-        "icon": "users"
+        "icon": "/images/icons/community.svg"
       }
     ]
   }

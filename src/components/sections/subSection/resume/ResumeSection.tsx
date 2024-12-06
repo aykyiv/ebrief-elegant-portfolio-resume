@@ -1,11 +1,10 @@
-
 import { IResume } from "@/interfaces/IResume";
 import Education from "./Education";
 import Experience from "./Experience";
 import Certificates from "./Certificates";
 import MySkills from "./MySkills";
-import { SkillsCarousel } from "../../../ui/SkillsCarousel";
-import { MainSection } from "@/components/sections/ui/MainSection";
+import { MainSection } from "@/components/sections/MainSection";
+import { SkillsCarousel } from "../../ui/SkillsCarousel";
 
 export function ResumeSection({ resumeMeData }: { resumeMeData: IResume }) {
   return (
@@ -14,10 +13,7 @@ export function ResumeSection({ resumeMeData }: { resumeMeData: IResume }) {
       <Experience resumeMeData={resumeMeData} />
       <Certificates resumeMeData={resumeMeData} />
       <MySkills resumeMeData={resumeMeData} />
-
-        <SkillsCarousel skills={resumeMeData.skillsCarusel} />
-        
-     
+      <SkillsCarousel skills={resumeMeData.skillsCarusel} />
     </MainSection>
   );
 }

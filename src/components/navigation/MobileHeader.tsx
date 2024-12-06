@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,9 +11,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu, Phone, Mail, MapPin } from "lucide-react";
-
-import SocialLinks from "./social-links/SocialLinks";
-import youtube from "../../public/images/icons/youtube.svg";
+import SocialLinks from "../social-links/SocialLinks";
+import youtube from "../../../public/images/icons/youtube.svg";
 import { IMainData } from "@/interfaces/IMainData";
 
 export default function MobileHeader({ mainData }: { mainData: IMainData }) {

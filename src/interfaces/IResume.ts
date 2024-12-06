@@ -1,6 +1,8 @@
 export interface IEducation {
+  
   concentration?: string;
   specialization?: string;
+  description?: string;
   institution: string;
   years: string;
 }
@@ -30,6 +32,10 @@ export interface ISkillCarusel {
 }
 export interface IResume {
   id: string;
+  educationSectionTitle: string;
+  experienceSectionTitle: string;
+  certificateSectionTitle: string;
+  skillsSectionTitle: string;
   education: IEducation[];
   experience: IExperience[];
   certificates: ICertificate[];

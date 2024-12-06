@@ -1,15 +1,21 @@
 [
   {
     "id": "1",
+    "educationSectionTitle": "Education",
+    "experienceSectionTitle": "Experience",
+    "certificateSectionTitle": "Certificates",
+    "skillsSectionTitle": "Skills",
     "education": [
       {
-        "concentration": "Drawing Concentration",
-        "institution": "New York Academy of Art",
+        "specialization": "Mechanical Engineering",
+        "institution": "New York Machinery Institute",
+        "description": "A comprehensive course on the principles of mechanics, materials science, and energy. Students learn about the design, analysis, and manufacturing of mechanical systems.",
         "years": "2015 - 2016"
       },
       {
-        "specialization": "UI/UX Design Specialization",
-        "institution": "California Institute of Arts",
+        "specialization": "Computer Science",
+        "institution": "New York University",
+        "description": "An in-depth study of computer systems, algorithms, and software development. This specialization covers topics such as programming, data structures, artificial intelligence, and computer networks.",
         "years": "2016 - 2020"
       }
     ],
@@ -91,44 +97,44 @@
     "skillsCarusel": [
       {
         "skill": "Unity",
-        "image": "/images/icons/carousel/aseprite.svg"
+        "image": "/images/skills-carusel/aseprite.svg"
       },
       {
         "skill": "Unity",
-        "image": "/images/icons/carousel/unity.svg"
+        "image": "/images/skills-carusel/unity.svg"
       },
       {
         "skill": "C#",
-        "image": "/images/icons/carousel/cplusplus.svg"
+        "image": "/images/skills-carusel/cplusplus.svg"
       },
       {
         "skill": "GDScript",
-        "image": "/images/icons/carousel/steam.svg"
+        "image": "/images/skills-carusel/steam.svg"
       },
       {
         "skill": "GDScript",
-        "image": "/images/icons/carousel/godotengine.svg"
+        "image": "/images/skills-carusel/godotengine.svg"
       },
       {
         "skill": "Aseprite",
-        "image": "/images/icons/carousel/nsis.svg"
+        "image": "/images/skills-carusel/nsis.svg"
       },
       {
         "skill": "Piskel",
-        "image": "/images/icons/carousel/pixelfed.svg"
+        "image": "/images/skills-carusel/pixelfed.svg"
       },
       {
         "skill": "PyxelEdit",
-        "image": "/images/icons/carousel/scratch.svg"
+        "image": "/images/skills-carusel/scratch.svg"
       },
 
       {
         "skill": "Graphics Gale",
-        "image": "/images/icons/carousel/sega.svg"
+        "image": "/images/skills-carusel/sega.svg"
       },
       {
         "skill": "Graphics Gale",
-        "image": "/images/icons/carousel/taichigraphics.svg"
+        "image": "/images/skills-carusel/taichigraphics.svg"
       }
     ]
   }

@@ -2,8 +2,9 @@ import Image from "next/image";
 import { Card, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { LogOut } from "lucide-react";
+import { LogOut, ServerCogIcon } from "lucide-react";
 import { IProject } from "@/interfaces/IPortfolio";
+import Link from "next/link";
 
 export function PortfolioCard({ project }: { project: IProject }) {
   return (
@@ -43,17 +44,34 @@ export function PortfolioCard({ project }: { project: IProject }) {
         </div>
 
         <CardFooter className="p-0 mt-auto">
-          <div className="flex gap-4 w-full">
-            {project.github && (
-              <Button className="flex-1 bg-primary text-white hover:bg-secondary transition-colors duration-300">
-                VIEW PROJECT <LogOut className="mr-2 h-4 w-4" />
-              </Button>
+          <div className="flex flex-col xl:flex-row gap-4 w-full">
+            {project.link && (
+              <Link href={project.link} className="w-full">
+                <Button className="flex-1 w-full bg-primary text-white hover:bg-secondary transition-colors duration-300">
+                  {project.linkButtonTitle} <LogOut className="mr-2 h-4 w-4" />
+                </Button>
+              </Link>
             )}
-            {project.github && (
-              <Button className="flex-1 bg-background border-secondary border   transition-colors duration-300">
-                GitHub{" "}
-                <Image src={project.icon} alt="GitHub" width={20} height={20} />
-              </Button>
+            {project.githubLink && (
+              <Link href={project.githubLink} className="w-full">
+                <Button className="flex-1 w-full bg-background border-secondary border   transition-colors duration-300">
+                  {project.githubButtonTitle}
+                  <Image
+                    src={project.icon}
+                    alt="GitHub"
+                    width={20}
+                    height={20}
+                  />
+                </Button>
+              </Link>
+            )}
+            {project.otherLink && (
+              <Link href={project.otherLink} className="w-full">
+                <Button className="flex-1 w-full bg-background border-secondary border   transition-colors duration-300">
+                  {project.otherButtonTitle}
+                  <ServerCogIcon className="mr-2 h-4 w-4" />
+                </Button>
+              </Link>
             )}
           </div>
         </CardFooter>

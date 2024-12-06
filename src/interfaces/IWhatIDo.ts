@@ -5,6 +5,7 @@
     whatIDoTitle: string;
     knowMe: {
       description: string;
+      descriptionHidden?: string;
     };
     whatIDo: {
       title: string;

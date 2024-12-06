@@ -27,19 +27,18 @@
 @layer base {
   * {
     @apply border-white;
-   
   }
   body {
     @apply bg-background text-fonts;
   }
 }
 
-h1{
+h1 {
   @apply text-[40px] font-bold;
   font-family: var(--font-unbounded);
 }
 
-h2{
+h2 {
   @apply text-[32px] font-bold;
   font-family: var(--font-unbounded);
 }
@@ -47,10 +46,23 @@ h2{
 h3 {
   @apply text-[20px] font-bold;
   font-family: var(--font-play);
-
 }
 
-p{
+p {
   @apply text-[16px];
   font-family: var(--font-roboto-slab);
+}
+
+ul li {
+  list-style: none;
+  background-image: url("/images/icons/list-dot.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0.3em;
+  padding-left: 24px;
+  line-height: 1.5em;
+}
+
+.shadow-inset {
+  box-shadow: inset 0 2px 5px rgba(131, 131, 131, 0.5);
 }

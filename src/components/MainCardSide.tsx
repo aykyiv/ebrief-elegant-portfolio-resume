@@ -8,9 +8,9 @@ import youtube from "../../public/images/icons/youtube.svg";
 
 function MainCardSide({ mainData }: { mainData: IMainData }) {
   return (
-    <div className="bg-primary rounded-md overflow-clip border-white border-2 shadow-inner  relative ">
+    <div className="bg-primary rounded-md overflow-clip border-white border-2 shadow-inner  relative shadow-inset">
       <div className="z-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[65%]   h-[800px] w-[800px] bg-white rounded-full blur-[2px]"></div>
-      <div className="relative p-6 flex flex-col gap-9 z-10 justify-between min-h-[740px]">
+      <div className="relative p-6 flex flex-col gap-9 z-10 justify-between min-h-[740px] shadow-inset">
         <div className="flex flex-row justify-between px-2 items-center">
           <div className="flex flex-row w-[70px] h-[70px] bg-primary items-center justify-center text-white rounded-md">
             <h1 className="text-3xl font-bold">

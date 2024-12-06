@@ -31,7 +31,7 @@ export function PortfolioSortSection({
                 ${
                   activeFilter === filter
                     ? "bg-primary text-white"
-                    : "bg-white text-[#0C0C13]  hover:border-primary "
+                    : "bg-white  hover:border-primary "
                 }
               `}
           >
@@ -39,7 +39,7 @@ export function PortfolioSortSection({
           </Button>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 min-h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:gap-6 gap-12 min-h-[500px]">
         {filteredProjects.map((project) => (
           <PortfolioCard key={project.name} project={project} />
         ))}

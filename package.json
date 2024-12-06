@@ -1,6 +1,6 @@
 {
   "name": "ebrief-elegant-portfolio-resume",
-  "version": "0.1beta",
+  "version": "0.5.beta",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

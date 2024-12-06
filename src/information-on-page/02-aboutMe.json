@@ -5,7 +5,8 @@
     "knowMeTitle": "Know Me",
     "whatIDoTitle": "What I Do",
     "knowMe": {
-      "description": "I'm an independent game developer with a passion for creating unique pixel art games. After graduating in Computer Science, I decided to pursue my dream of making games that combine nostalgic aesthetics with modern gameplay mechanics. I love creating immersive experiences that tell meaningful stories."
+      "description": "I'm an independent game developer with a passion for creating unique pixel art games. After graduating in Computer Science. I've been honing my skills in game development, pixel art, and sound design, and I'm excited to share my passion with you.",
+      "descriptionHidden": " I decided to pursue my dream of making games that combine nostalgic aesthetics with modern gameplay mechanics. I love creating immersive experiences that tell meaningful stories. With a strong focus on pixel art and fluid animations, I'm committed to delivering engaging and visually appealing games that captivate players. Let's collaborate and bring your ideas to life."
     },
     "whatIDo": [
       {

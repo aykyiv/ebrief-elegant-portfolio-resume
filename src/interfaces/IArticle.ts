@@ -1,4 +1,4 @@
-interface Article {
+export interface IArticle {
   title: string;
   description: string;
   image: string;
@@ -8,5 +8,7 @@ interface Article {
 }
 export interface IArticleDataItem {
   id: string;
-  articles: Article[];
+  readArticleButton: string;
+  title: string;
+  articles: IArticle[];
 }

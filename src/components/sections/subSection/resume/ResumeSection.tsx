@@ -8,7 +8,7 @@ import { SkillsCarousel } from "../../ui/SkillsCarousel";
 
 export function ResumeSection({ resumeMeData }: { resumeMeData: IResume }) {
   return (
-    <MainSection title="Resume" className="relative">
+    <MainSection id="resume" title="Resume" className="relative">
       <Education resumeMeData={resumeMeData} />
       <Experience resumeMeData={resumeMeData} />
       <Certificates resumeMeData={resumeMeData} />

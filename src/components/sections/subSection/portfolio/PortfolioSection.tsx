@@ -5,7 +5,7 @@ import { IProjectItem } from '@/interfaces/IPortfolio'
 
 function PortfolioSection({ portfolioData }: { portfolioData: IProjectItem }) {
   return (
-    <MainSection title={portfolioData.title} className='mt-[140px]'>
+    <MainSection id='portfolio' title={portfolioData.title} className='mt-[140px]'>
       <PortfolioSortSection portfolioData={portfolioData} />
     </MainSection>
   )

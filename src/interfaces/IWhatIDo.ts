@@ -31,6 +31,7 @@ export interface IServiceCardProps {
 
   export interface IMainSectionProps {
     title: string;
+    id: string;
     children: React.ReactNode;
     className?: string;
   }

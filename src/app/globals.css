@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    
     --white: #fff;
 
     --background: #f8f8f6;
@@ -27,6 +28,7 @@
 @layer base {
   * {
     @apply border-white;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-fonts;
@@ -65,4 +67,9 @@ ul li {
 
 .shadow-inset {
   box-shadow: inset 0 2px 5px rgba(131, 131, 131, 0.5);
+}
+
+.lucide.x{
+  width: 12px;
+  height: 12px;
 }

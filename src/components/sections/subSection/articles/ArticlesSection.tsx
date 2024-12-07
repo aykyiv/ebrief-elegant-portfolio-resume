@@ -8,7 +8,7 @@ export function ArticlesSection({
   articleData: IArticleDataItem;
 }) {
   return (
-    <MainSection title={articleData.title}>
+    <MainSection id="articles" title={articleData.title}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-6">
         {articleData.articles.map((article) => (
           <ArticleCard

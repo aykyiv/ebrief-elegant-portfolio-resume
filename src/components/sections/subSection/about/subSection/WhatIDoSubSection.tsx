@@ -17,7 +17,7 @@ function WhatIDoSubSection({aboutMeData}: {aboutMeData: IWhatIDo}) {
                 className="flex flex-col gap-4 xl:flex-row relative z-20 rounded-[5px]"
               />
               <div
-                className={`absolute -left-2 rounded-sm -top-2 bottom-0 w-[354px] xl:w-[80px] h-[80px] transition-all duration-500 xl:group-hover:w-[860px]  xl:group-hover:h-[115px] z-10 ${
+                className={`absolute -left-2 rounded-sm -top-2 bottom-0 w-[340px] xl:w-[80px] h-[80px] transition-all duration-500 xl:group-hover:w-[860px]  xl:group-hover:h-[115px] z-10 ${
                   index % 2 === 1 ? "bg-secondary" : "bg-primary"
                 }`}
               />

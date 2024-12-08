@@ -16,20 +16,20 @@ export function ArticleCard({
 }: IArticle & { readArticleButton: string }) {
   return (
     <div className="rounded-sm overflow-hidden ">
-      <div className="relative h-48">
+      <div className="relative shadow-inset h-48">
         <Image
           src={image}
           alt={title}
           layout="fill"
-          className="w-full h-full object-cover"
+          className="w-full h-full  object-cover"
         />
       </div>
       <div className=" min-h-[240px] flex flex-col justify-between">
-        <div className="bg-white min-h-[230px] flex flex-col justify-between gap-2 p-6 max-w-[400px] mx-auto mb-4 -mt-10 z-10 relative rounded-sm">
+        <div className="bg-white shadow-md min-h-[230px] flex flex-col justify-between gap-2 p-6 max-w-[400px] mx-auto mb-4 -mt-10 z-10 relative rounded-sm">
           <div className="flex  items-center justify-between  gap-4 ">
             <h3 className="text-xl font-semibold  mb-2">{title}</h3>
-            <Badge variant="outline" className="border-secondary  min-w-max">
-              {date}
+            <Badge variant="outline" className="border-secondary bg-red-100/25  min-w-max">
+              <p className="text-sm">{date}</p>
             </Badge>
           </div>
           <div className="flex flex-col gap-2">
@@ -39,7 +39,7 @@ export function ArticleCard({
                 <Badge
                   key={tech}
                   variant="outline"
-                  className="bg-background  border-primary "
+                  className="bg-background   border-primary "
                 >
                   <p className="text-sm">{tech}</p>
                 </Badge>
@@ -51,7 +51,7 @@ export function ArticleCard({
           <Link href={link} target="_blank" className="w-full">
             <Button
               variant="outline"
-              className="border-primary text-primary w-full flex items-center gap-2"
+              className="border-primary hover:bg-red-100/25 hover:border-secondary text-primary w-full flex items-center gap-2"
             >
               <p>{readArticleButton}</p>
               <LogOut className="h-4 w-4" />

@@ -14,7 +14,7 @@ export function PortfolioCard({ project }: { project: IProject }) {
           <h3 className="text-2xl font-bold  leading-tight">{project.name}</h3>
           <Badge
             variant="secondary"
-            className="bg-secondary text-white px-3 py-1 text-xs font-semibold rounded-full "
+            className="bg-red-100/25 border-secondary px-3 py-1 text-xs font-medium rounded-full "
           >
             <p className="text-sm">{project.category}</p>
           </Badge>
@@ -54,7 +54,7 @@ export function PortfolioCard({ project }: { project: IProject }) {
             )}
             {project.githubLink && (
               <Link href={project.githubLink} className="w-full" target="_blank"  >
-                <Button className="flex-1 w-full bg-background border-secondary border   transition-colors duration-300">
+                <Button className="flex-1 w-full bg-background border-primary hover:border-secondary border   transition-colors duration-300">
                   {project.githubButtonTitle}
                   <Image
                     src={project.icon}
@@ -67,7 +67,7 @@ export function PortfolioCard({ project }: { project: IProject }) {
             )}
             {project.otherLink && (
               <Link href={project.otherLink} className="w-full" target="_blank" >
-                <Button className="flex-1 w-full bg-background border-secondary border   transition-colors duration-300">
+                <Button className="flex-1 w-full bg-background border-primary hover:border-secondary border   transition-colors duration-300">
                   {project.otherButtonTitle}
                   <ServerCogIcon className="mr-2 h-4 w-4" />
                 </Button>

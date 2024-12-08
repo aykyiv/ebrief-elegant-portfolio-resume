@@ -24,11 +24,11 @@ export function ArticleCard({
           className="w-full h-full object-cover"
         />
       </div>
-      <div className=" min-h-[170px] flex flex-col justify-between">
-        <div className="bg-white p-6 max-w-[400px] mx-auto mb-4 -mt-10 z-10 relative rounded-sm">
-          <div className="flex justify-between items-center gap-2">
-            <h3 className="text-xl font-medium text-secondary mb-2">{title}</h3>
-            <Badge variant="outline" className="border-secondary  ">
+      <div className=" min-h-[240px] flex flex-col justify-between">
+        <div className="bg-white min-h-[230px] flex flex-col justify-between gap-2 p-6 max-w-[400px] mx-auto mb-4 -mt-10 z-10 relative rounded-sm">
+          <div className="flex  items-center justify-between  gap-4 ">
+            <h3 className="text-xl font-semibold  mb-2">{title}</h3>
+            <Badge variant="outline" className="border-secondary  min-w-max">
               {date}
             </Badge>
           </div>
@@ -47,7 +47,7 @@ export function ArticleCard({
             </div>
           </div>
         </div>
-        <div className="flex  justify-evenly">
+        <div className="flex  justify-evenly w-[400px] mx-auto">
           <Link href={link} target="_blank" className="w-full">
             <Button
               variant="outline"

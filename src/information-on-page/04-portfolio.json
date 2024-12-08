@@ -1,12 +1,12 @@
 [
   {
     "id": "1",
-    "filters": ["All", "Released Games", "Game Jams", "Prototypes", "Art"],
+    "filters": ["All", "Released", "Jams", "Prototypes", "Art"],
     "title": "Portfolio",
     "projects": [
       {
         "name": "Pixel Dungeons: Forgotten Realms",
-        "category": "Released Games",
+        "category": "Released",
         "description": "A roguelike dungeon crawler with procedurally generated levels and unique pixel art style. Available on Steam with Very Positive reviews.",
         "technologies": ["Unity", "C#", "Aseprite", "BFXR"],
         "link": "https://store.steampowered.com/app/1525000/Pixel_Dungeons_Forgotten_Realms/",
@@ -20,7 +20,7 @@
       },
       {
         "name": "Time Loop Tales",
-        "category": "Game Jams",
+        "category": "Jams",
         "description": "A puzzle platformer made in 48 hours for Ludum Dare 52. Player manipulates time to solve environmental puzzles.",
         "technologies": ["Godot", "GDScript", "Piskel"],
         "link": "https://store.steampowered.com/app/1525000/Pixel_Dungeons_Forgotten_Realms/",

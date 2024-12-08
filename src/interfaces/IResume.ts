@@ -32,6 +32,7 @@ export interface ISkillCarusel {
 }
 export interface IResume {
   id: string;
+  title: string;
   educationSectionTitle: string;
   experienceSectionTitle: string;
   certificateSectionTitle: string;

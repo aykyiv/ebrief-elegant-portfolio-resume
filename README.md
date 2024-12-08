@@ -1,6 +1,6 @@
 # 🛠️ Work in progress
 
-Deadline before cristmas holidays 2024.
+Curently in beta test.
 
 ---
 

@@ -24,7 +24,7 @@ function MainCardSide({ mainData }: { mainData: IMainData }) {
             {mainData.hero.role
               .split(" ")
               .map((word: string, index: number) => (
-                <h3 key={index}>{word}</h3>
+                <h3 className="text-3xl" key={index}>{word}</h3>
               ))}
           </div>
         </div>

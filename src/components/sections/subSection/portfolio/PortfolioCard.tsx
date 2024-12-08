@@ -10,11 +10,11 @@ export function PortfolioCard({ project }: { project: IProject }) {
   return (
     <Card className="relative overflow-hidden bg-gradient-to-br from-white to-white border-2 border-white shadow-lg hover:shadow-xl transition-all duration-300 group">
       <div className="relative p-6 flex flex-col h-full border-white border-2">
-        <div className="flex justify-between items-start mb-4">
+        <div className="flex items-center justify-between mb-4">
           <h3 className="text-2xl font-bold  leading-tight">{project.name}</h3>
           <Badge
             variant="secondary"
-            className="bg-secondary text-white px-3 py-1 text-xs font-semibold rounded-full"
+            className="bg-secondary text-white px-3 py-1 text-xs font-semibold rounded-full "
           >
             <p className="text-sm">{project.category}</p>
           </Badge>
@@ -46,14 +46,14 @@ export function PortfolioCard({ project }: { project: IProject }) {
         <CardFooter className="p-0 mt-auto">
           <div className="flex flex-col xl:flex-row gap-4 w-full">
             {project.link && (
-              <Link href={project.link} className="w-full">
+              <Link href={project.link} className="w-full" target="_blank" >
                 <Button className="flex-1 w-full bg-primary text-white hover:bg-secondary transition-colors duration-300">
                   {project.linkButtonTitle} <LogOut className="mr-2 h-4 w-4" />
                 </Button>
               </Link>
             )}
             {project.githubLink && (
-              <Link href={project.githubLink} className="w-full">
+              <Link href={project.githubLink} className="w-full" target="_blank"  >
                 <Button className="flex-1 w-full bg-background border-secondary border   transition-colors duration-300">
                   {project.githubButtonTitle}
                   <Image
@@ -66,7 +66,7 @@ export function PortfolioCard({ project }: { project: IProject }) {
               </Link>
             )}
             {project.otherLink && (
-              <Link href={project.otherLink} className="w-full">
+              <Link href={project.otherLink} className="w-full" target="_blank" >
                 <Button className="flex-1 w-full bg-background border-secondary border   transition-colors duration-300">
                   {project.otherButtonTitle}
                   <ServerCogIcon className="mr-2 h-4 w-4" />

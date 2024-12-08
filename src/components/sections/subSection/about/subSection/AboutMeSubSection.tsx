@@ -39,9 +39,13 @@ function AboutMeSubSection({ aboutMeData }: { aboutMeData: IWhatIDo }) {
           ) : (
             <p className="min-w-[110px]">Show more</p>
           )}
-          <ArrowDownCircleIcon
-            className={` w-10 h-10 scale-125 inline ${isExpanded ? "rotate-180" : ""}`}
-          />
+          <div onClick={toggleExpand}>
+            <ArrowDownCircleIcon
+              className={` w-10 h-10 scale-125 inline ${
+                isExpanded ? "rotate-180" : ""
+              }`}
+            />
+          </div>
         </div>
       </Button>
       <div className="absolute w-[350px] h-[350px] blur-[150px] bg-red-300/20 top-0 left-0 transform  -translate-y-[50%]"></div>

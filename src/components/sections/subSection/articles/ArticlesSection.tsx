@@ -5,8 +5,12 @@ import { IArticleDataItem } from "@/interfaces/IArticle";
 export function ArticlesSection({
   articleData,
 }: {
-  articleData: IArticleDataItem;
+  articleData: IArticleDataItem | null;
 }) {
+  if (!articleData || articleData.articles.length === 0) {
+    return null;
+  }
+
   return (
     <MainSection id="articles" title={articleData.title}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-6">

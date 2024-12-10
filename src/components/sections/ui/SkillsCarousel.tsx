@@ -17,7 +17,7 @@ export function SkillsCarousel({ skills }: SkillsCarouselProps) {
         {[...skills, ...skills].map((skill, index) => (
           <div
             key={`${skill.skill}-${index}`}
-            className="w-[140px] mx-4 p-4 flex justify-center items-center"
+            className="shadow-inset w-[140px] m-4 p-4 bg-white rounded-md flex justify-center items-center"
           >
             <Image
               src={skill.image}

@@ -13,8 +13,8 @@ function RightSideSections() {
     <div className=" w-full h-full  flex flex-col gap-10 mx-auto">
       <AboutSection aboutMeData={aboutMeData[0]} />
       <ResumeSection resumeMeData={resumeMeData[0]} />
-      <PortfolioSection portfolioData={portfolioData[0]} />
-      <ArticlesSection articleData={articleData[0]} />
+      <PortfolioSection portfolioData={portfolioData[0] || null} />
+      <ArticlesSection articleData={articleData[0] || null} />
     </div>
   );
 }

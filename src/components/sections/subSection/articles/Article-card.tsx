@@ -47,11 +47,11 @@ export function ArticleCard({
             </div>
           </div>
         </div>
-        <div className="flex  justify-evenly w-[400px] mx-auto">
+        <div className="flex  justify-evenly w-full xl:w-[400px] mx-auto">
           <Link href={link} target="_blank" className="w-full">
             <Button
               variant="outline"
-              className="border-primary hover:bg-red-100/25 hover:border-secondary text-primary w-full flex items-center gap-2"
+              className="border-primary hover:bg-secondary-foreground hover:border-secondary text-primary w-full flex items-center gap-2"
             >
               <p>{readArticleButton}</p>
               <LogOut className="h-4 w-4" />

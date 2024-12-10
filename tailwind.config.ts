@@ -21,6 +21,7 @@ export default {
         fonts: "var(--fonts)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        "secondary-foreground": "var(--secondary-foreground)",
       },
       borderRadius: {
         sm: "var(--border-sm)",

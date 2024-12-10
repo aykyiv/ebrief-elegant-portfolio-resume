@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-    
     --white: #fff;
 
     --background: #f8f8f6;
@@ -14,6 +13,7 @@
     --primary: #2a93c5;
 
     --secondary: #f15533;
+    --secondary-foreground: rgba(241, 86, 51, 0.15);
 
     --border-sm: 10px;
     --border-md: 20px;
@@ -69,7 +69,3 @@ ul li {
   box-shadow: inset 0 2px 5px rgba(131, 131, 131, 0.5);
 }
 
-.lucide.x{
-  width: 12px;
-  height: 12px;
-}

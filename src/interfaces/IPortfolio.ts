@@ -16,5 +16,6 @@ export interface IProjectItem {
   id: string;
   title: string;
   filters: string[];
+  filtersAllButton: string;
   projects: IProject[];
 }

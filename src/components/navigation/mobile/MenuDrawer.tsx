@@ -11,7 +11,7 @@ import {
 import { Menu, Phone, Mail, MapPin } from "lucide-react";
 import youtube from "../../../../public/images/icons/youtube.svg";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import SocialLinks from "@/components/social-links/SocialLinks";
 import { IMainData } from "@/interfaces/IMainData";
 

@@ -34,9 +34,9 @@ Before you begin, ensure you have the following installed:
 
 ## 💡 **Usage**
 
-- Update the JSON files in the `/src/information-on-page` folder to modify content like your bio, resume, or projects. The 01-main, 02-aboutMe, and 03-resume are required;
-- change colors in `/src/app/globals.css` lines 5-15;
-- images, icons, and other assets are stored in `/public/images/hero-image.jpg`, if you want to change them, you need to change the paths in the JSON files. Path to asset must look like this: `/images/hero-image.jpg`;
+- Update the JSON files in the `/src/information-on-page` folder to modify content like your bio, resume, or projects. The 01-main, 02-aboutMe, and 03-resume are necessary. 04-portfolio and 05-articles are optional;
+- Change colors in `/src/app/globals.css` lines 5-15;
+- Images, icons, and other assets are stored in `/public/images/hero-image.jpg`, if you want to change them, you need to change the paths in the JSON files. Path to asset must look like this: `/images/hero-image.jpg`;
 - Preview your changes locally with `npm run dev` before deploying updates.
 
 ---

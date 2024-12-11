@@ -10,10 +10,15 @@ export function PortfolioSortSection({
 }: {
   portfolioData: IProjectItem;
 }) {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const allButton = portfolioData.filtersAllButton;
+  const [activeFilter, setActiveFilter] = useState(allButton);
+
+const onlyFiltersWithProjects = [allButton, ...portfolioData.filters.filter(
+    (filter) => portfolioData.projects.some((project) => project.category === filter)
+  )];
 
   const filteredProjects =
-    activeFilter === "All"
+    activeFilter === allButton
       ? portfolioData.projects
       : portfolioData.projects.filter(
           (project) => project.category === activeFilter
@@ -22,7 +27,7 @@ export function PortfolioSortSection({
   return (
     <section className=" bg-background">
       <div className="flex justify-center flex-wrap gap-4 mb-12">
-        {portfolioData.filters.map((filter) => (
+        {onlyFiltersWithProjects.map((filter) => (
           <Button
             key={filter}
             onClick={() => setActiveFilter(filter)}
@@ -35,7 +40,7 @@ export function PortfolioSortSection({
                 }
               `}
           >
-            {filter}
+            <p>{filter}</p>
           </Button>
         ))}
       </div>

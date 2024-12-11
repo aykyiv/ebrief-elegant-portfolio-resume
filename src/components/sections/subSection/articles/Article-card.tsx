@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { IArticle } from "@/interfaces/IArticle";
 import { LogOut } from "lucide-react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 export function ArticleCard({

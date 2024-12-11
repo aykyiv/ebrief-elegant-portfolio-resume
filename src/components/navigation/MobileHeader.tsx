@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import { IMainData } from "@/interfaces/IMainData";
 import MenuDrawer from "./mobile/MenuDrawer";

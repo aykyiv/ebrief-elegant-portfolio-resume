@@ -1,7 +1,8 @@
 [
   {
     "id": "1",
-    "filters": ["All", "Released", "Jams", "Prototypes", "Art"],
+    "filters": [ "Released", "Jams", "Prototypes", "Art"],
+    "filtersAllButton": "All",
     "title": "Portfolio",
     "projects": [
       {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 
 interface SkillCarousel {
@@ -17,7 +17,7 @@ export function SkillsCarousel({ skills }: SkillsCarouselProps) {
         {[...skills, ...skills].map((skill, index) => (
           <div
             key={`${skill.skill}-${index}`}
-            className="shadow-inset w-[140px] m-4 p-4 bg-white rounded-md flex justify-center items-center"
+            className="shadow-inset w-[70px] xl:w-[140px] m-4 p-4 bg-white rounded-md flex justify-center items-center"
           >
             <Image
               src={skill.image}

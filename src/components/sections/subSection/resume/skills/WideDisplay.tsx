@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { ProgressBar } from "@/components/ui/progress";
 import { IResume } from "@/interfaces/IResume";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 
 const WideDisplay = ({ resumeMeData }: { resumeMeData: IResume }) => {
@@ -10,7 +10,7 @@ const WideDisplay = ({ resumeMeData }: { resumeMeData: IResume }) => {
       {resumeMeData.skills.map((skill, index) => (
         <div key={index} className="flex flex-row items-center">
           <div
-            className={`flex-shrink-0 w-14 h-14 ${
+            className={`flex-shrink-0 flex items-center justify-center w-14 h-14 ${
               index % 2 === 0 ? "bg-primary" : "bg-secondary"
             } rounded-sm`}
           >

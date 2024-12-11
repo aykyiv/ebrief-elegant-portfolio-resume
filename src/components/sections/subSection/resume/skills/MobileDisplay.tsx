@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { ProgressBar } from "@/components/ui/progress";
 import { IResume } from "@/interfaces/IResume";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 
 const MobileDisplay = ({ resumeMeData }: { resumeMeData: IResume }) => {
@@ -12,7 +12,7 @@ const MobileDisplay = ({ resumeMeData }: { resumeMeData: IResume }) => {
           <div className="flex flex-row w-full justify-between px-4 items-center gap-2">
             <div className="flex w-[130px] flex-col items-center gap-2">
               <div
-                className={`flex-shrink-0 w-20 h-20 rounded-sm ${
+                className={`flex items-center justify-center flex-shrink-0 w-20 h-20 rounded-sm ${
                   index % 2 === 0 ? "bg-primary" : "bg-secondary"
                 }`}
               >

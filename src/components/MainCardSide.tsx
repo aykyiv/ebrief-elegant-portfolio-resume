@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { IMainData } from "@/interfaces/IMainData";
 import SocialLinks from "./social-links/SocialLinks";
 import youtube from "../../public/images/icons/youtube.svg";

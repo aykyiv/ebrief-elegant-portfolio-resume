@@ -10,7 +10,7 @@ function PortfolioSection({ portfolioData }: { portfolioData: IProjectItem | nul
   }
 
   return (
-    <MainSection id='portfolio' title={portfolioData.title} className='mt-[140px]'>
+    <MainSection id='portfolio' title={portfolioData.title} className='mt-[70px] xl:mt-[140px]'>
       <PortfolioSortSection portfolioData={portfolioData} />
     </MainSection>
   )

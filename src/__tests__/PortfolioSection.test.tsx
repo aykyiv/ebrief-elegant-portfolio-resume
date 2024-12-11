@@ -36,6 +36,7 @@ describe("PortfolioSection", () => {
   });
 
   test("renders only filters with projects and all", () => {
+    
     const { getAllByText } = render(
       <PortfolioSection portfolioData={mockPortfolioData[0]} />
     );

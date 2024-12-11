@@ -24,7 +24,9 @@ function MainCardSide({ mainData }: { mainData: IMainData }) {
             {mainData.hero.role
               .split(" ")
               .map((word: string, index: number) => (
-                <h3 className="text-3xl" key={index}>{word}</h3>
+                <h3 className="text-3xl" key={index}>
+                  {word}
+                </h3>
               ))}
           </div>
         </div>
@@ -61,13 +63,15 @@ function MainCardSide({ mainData }: { mainData: IMainData }) {
               >
                 <div className="flex items-center space-x-2">
                   <p>{mainData.hero.videoButtonText}</p>
-                  <Image
-                    src={youtube}
-                    alt="youtube"
-                    width={30}
-                    height={30}
-                    className=" transition-all bg-white group-hover:border-primary  p-1 border group-hover: rounded-full"
-                  />
+                  <div className=" w-7 h-7 transition-all bg-white  group-hover:border-primary  p-[2px] border group-hover: rounded-full">
+                    <Image
+                      src={youtube}
+                      alt="youtube"
+                      width={30}
+                      height={30}
+                      className=""
+                    />
+                  </div>
                 </div>
               </a>
             </Button>

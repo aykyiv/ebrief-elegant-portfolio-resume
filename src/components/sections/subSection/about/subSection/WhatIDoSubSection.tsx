@@ -29,7 +29,12 @@ function WhatIDoSubSection({ aboutMeData }: { aboutMeData: IWhatIDo }) {
             />
             <div
               style={{ width: width }}
-              className={`absolute -left-2 rounded-sm -top-2 bottom-0  xl:w-[80px] h-[80px] transition-all duration-500 xl:group-hover:w-[860px]  xl:group-hover:h-[115px] z-10 ${
+              className={` xl:hidden flex absolute -left-2 rounded-sm -top-2 bottom-0  h-[80px] transition-all duration-500 ]  z-10 ${
+                index % 2 === 1 ? "bg-secondary" : "bg-primary"
+              }`}
+            />
+            <div
+              className={` hidden xl:flex absolute -left-2 rounded-sm -top-2 bottom-0  xl:w-[80px] h-[80px] transition-all duration-500 group-hover:w-[860px]  group-hover:h-[115px] z-10 ${
                 index % 2 === 1 ? "bg-secondary" : "bg-primary"
               }`}
             />

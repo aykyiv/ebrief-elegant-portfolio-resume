@@ -27,6 +27,7 @@ export interface IServiceCardProps {
     title: string;
     children: React.ReactNode;
     className?: string;
+    ref?: React.Ref<HTMLDivElement>;
   }
 
   export interface IMainSectionProps {

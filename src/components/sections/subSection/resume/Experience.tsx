@@ -8,7 +8,7 @@ function Experience({resumeMeData}: {resumeMeData: IResume}) {
           <div className='flex flex-col gap-12'>
               {resumeMeData.experience.map((exp, index) => (
                 <div key={index} className='flex flex-col gap-2'>
-                  <div className='flex flex-row justify-between'>
+                  <div className='flex flex-col xl:flex-row justify-between '>
                       <h3 className="text-secondary">
                         {exp.role} at {exp.company}:
                       </h3>

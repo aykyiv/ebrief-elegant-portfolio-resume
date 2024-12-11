@@ -35,7 +35,7 @@ function MenuDrawer({ mainData }: { mainData: IMainData }) {
         <SheetHeader className="">
           <SheetTitle className="flex items-center justify-between">
             <div className="flex items-center space-x-3 mx-auto">
-              <div className="relative w-28 h-28 overflow-hidden rounded-full border-2 border-primary">
+              <div className="relative w-28 h-28 overflow-hidden rounded-md border-2 border-primary">
                 <Image
                   src={mainData.hero.image}
                   alt={mainData.hero.name}
@@ -64,13 +64,15 @@ function MenuDrawer({ mainData }: { mainData: IMainData }) {
             >
               <div className="flex items-center space-x-2">
                 <p>{mainData.hero.videoButtonText}</p>
-                <Image
-                  src={youtube}
-                  alt="youtube"
-                  width={30}
-                  height={30}
-                  className=" transition-all bg-white group-hover:border-primary  p-1 border  rounded-full"
-                />
+                <div className="w-7 h-7 transition-all bg-white group-hover:border-primary  p-1 border  rounded-full">
+                  <Image
+                    src={youtube}
+                    alt="youtube"
+                    width={24}
+                    height={24}
+                    className=" "
+                  />
+                </div>
               </div>
             </Link>
           </Button>

@@ -8,7 +8,7 @@ function Education({ resumeMeData }: { resumeMeData: IResume }) {
       <SubSection title={resumeMeData.educationSectionTitle}>
         {resumeMeData.education.map((edu, index) => (
           <div key={index} className="flex flex-col  gap-2">
-            <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-col xl:flex-row justify-between xl:items-center">
               <h3 className="text-secondary">{edu.specialization}:</h3>
               <p className="text-primary text-sm min-w-max">({edu.years})</p>
              

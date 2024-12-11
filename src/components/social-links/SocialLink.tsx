@@ -17,8 +17,8 @@ const SocialLink = ({
     rel="noopener noreferrer"
     className="text-fonts hover:text-primary transition-colors"
   >
-    <div className="p-2 bg-white rounded-sm">
-      <Image src={Icon} alt={alt} className="w-5 h-5" />
+    <div className="p-2 bg-white rounded-sm w-10 h-10 flex items-center justify-center">
+      <Image src={Icon} alt={alt} width={32} height={32} className="" />
     </div>
   </Link>
 );

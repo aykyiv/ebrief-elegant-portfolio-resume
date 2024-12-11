@@ -9,7 +9,7 @@ export default function MobileHeader({ mainData }: { mainData: IMainData }) {
   return (
     <header className="bg-background p-4 flex flex-row justify-between ">
       <div className="flex items-center space-x-3">
-        <div className="relative w-14 h-14 overflow-hidden rounded-full border-2 border-primary">
+        <div className="relative w-14 h-14 overflow-hidden rounded-md border-2 border-primary">
           <Image
             src={mainData.hero.image}
             alt={mainData.hero.name}

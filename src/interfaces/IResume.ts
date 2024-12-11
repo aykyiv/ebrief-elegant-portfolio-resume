@@ -1,5 +1,4 @@
 export interface IEducation {
-  
   concentration?: string;
   specialization?: string;
   description?: string;
@@ -35,6 +34,7 @@ export interface IResume {
   title: string;
   educationSectionTitle: string;
   experienceSectionTitle: string;
+  certificateSectionButton: string;
   certificateSectionTitle: string;
   skillsSectionTitle: string;
   education: IEducation[];

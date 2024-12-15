@@ -1,12 +1,8 @@
-# 🛠️ Work in progress
+# 🖥️ eBrief elegant Portfolio / Resume Template
 
-Curently in beta test.
+![eBrief Portfolio Showcase](./public/eBrief-image.png "eBrief Showcase")
 
----
-
-## 🖥️ eBrief Portfolio / Resume SPA Template
-
-A sleek and lightweight single-page application template built with **TypeScript**, **Next.js**, **TailwindCSS**, and **shadcn**. Designed to help digital professionals save time by providing an elegant, ready-to-use portfolio or resume showcase that is **easy to customize** and **ready to deploy**.
+A lightweight single-page application template built with **TypeScript**, **Next.js**, **TailwindCSS**, and **shadcn**. Designed to help digital professionals save time by providing an elegant, ready-to-use portfolio or resume showcase that is **easy to customize** and **ready to deploy**.
 
 ---
 
@@ -119,5 +115,10 @@ This project was built with love for the developer community, using:
 - [**Next.js**](https://nextjs.org/) for its robust React framework.
 - [**TailwindCSS**](https://tailwindcss.com/) for utility-first CSS.
 - [**shadcn**](https://shadcn.dev/) for design consistency.
+
+---
+## 🤝 **Real-life examples made with the eBrief**
+
+- [Example Showcase - David Rivers, Game Developer & Pixel Artist](https://ebrief.vercel.app/)
 
 We welcome contributions to enhance functionality or improve design.

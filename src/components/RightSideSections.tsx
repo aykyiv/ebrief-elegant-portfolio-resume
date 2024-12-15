@@ -10,7 +10,7 @@ import { ResumeSection } from "./sections/subSection/resume/ResumeSection";
 
 function RightSideSections() {
   return (
-    <div className=" w-full h-full  flex flex-col gap-10 mx-auto">
+    <div className=" w-full h-full  flex flex-col gap-10 mx-auto mb-6">
       <AboutSection aboutMeData={aboutMeData[0]} />
       <ResumeSection resumeMeData={resumeMeData[0]} />
       <PortfolioSection portfolioData={portfolioData[0] || null} />

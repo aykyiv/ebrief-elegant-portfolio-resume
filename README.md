@@ -117,8 +117,8 @@ This project was built with love for the developer community, using:
 - [**shadcn**](https://shadcn.dev/) for design consistency.
 
 ---
-## 🤝 **Real-life examples made with the eBrief**
+## 🤝 **Real examples made with the eBrief**
 
-- [Example Showcase - David Rivers, Game Developer & Pixel Artist](https://ebrief.vercel.app/)
+- [eBrief Showcase - David Rivers, Game Developer & Pixel Artist](https://ebrief.vercel.app/)
 
 We welcome contributions to enhance functionality or improve design.

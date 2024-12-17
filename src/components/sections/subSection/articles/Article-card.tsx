@@ -28,12 +28,15 @@ export function ArticleCard({
         <div className="bg-white shadow-md min-h-[230px] flex flex-col justify-between gap-2 p-6 max-w-[400px] mx-auto mb-4 -mt-10 z-10 relative rounded-sm">
           <div className="flex  items-center justify-between  gap-4 ">
             <h3 className="text-xl font-semibold  mb-2">{title}</h3>
-            <Badge variant="outline" className="border-secondary bg-red-100/25  min-w-max">
+            <Badge
+              variant="outline"
+              className="border-secondary bg-secondary-foreground  min-w-max"
+            >
               <p className="text-sm">{date}</p>
             </Badge>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="text-fonts">{description}</p>{" "}
+            <p className="text-fonts">{description}</p>
             <div className="flex flex-wrap gap-2">
               {tags.map((tech) => (
                 <Badge

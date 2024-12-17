@@ -2,6 +2,7 @@
   {
     "id": "1",
     "navigation": {
+      "draverBtnToggleText": "Toggle menu",
       "navLinks": [
         { "title": "About", "url": "about" },
         { "title": "Resume", "url": "resume" },

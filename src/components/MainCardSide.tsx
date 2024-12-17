@@ -5,6 +5,7 @@ import Image from "next/legacy/image";
 import { IMainData } from "@/interfaces/IMainData";
 import SocialLinks from "./social-links/SocialLinks";
 import youtube from "../../public/images/icons/youtube.svg";
+import Link from "next/link";
 
 function MainCardSide({ mainData }: { mainData: IMainData }) {
   return (
@@ -56,7 +57,7 @@ function MainCardSide({ mainData }: { mainData: IMainData }) {
               className="group w-full hover:border-primary hover:text-primary hover:bg-white bg-primary text-white transition-colors"
               asChild
             >
-              <a
+              <Link
                 href={mainData.hero.videoGreeting}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,7 +74,7 @@ function MainCardSide({ mainData }: { mainData: IMainData }) {
                     />
                   </div>
                 </div>
-              </a>
+              </Link>
             </Button>
           </div>
         )}

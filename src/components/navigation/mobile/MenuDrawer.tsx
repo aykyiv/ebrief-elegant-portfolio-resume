@@ -25,7 +25,7 @@ function MenuDrawer({ mainData }: { mainData: IMainData }) {
       >
         <Button variant="outline" size="icon" className="border-fonts border">
           <Menu className="h-6 w-6" />
-          <span className="sr-only">Toggle menu</span>
+          <p className="sr-only text-xs">{mainData.navigation.draverBtnToggleText}</p>
         </Button>
       </SheetTrigger>
       <SheetContent
@@ -119,7 +119,7 @@ function MenuDrawer({ mainData }: { mainData: IMainData }) {
           </Link>
           <div className="flex items-center space-x-3 text-sm text-fonts/80">
             <MapPin className="w-4 h-4 text-primary" />
-            <span>{mainData.contactInfo.location}</span>
+            <p className="text-xs">{mainData.contactInfo.location}</p>
           </div>
         </div>
         <div className="bg-primary h-[80px] flex items-center justify-center">

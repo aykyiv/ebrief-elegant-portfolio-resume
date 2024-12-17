@@ -4,6 +4,8 @@
     knowMeTitle: string;
     whatIDoTitle: string;
     knowMe: {
+      showLess: string;
+      showMore: string;
       description: string;
       descriptionHidden?: string;
     };

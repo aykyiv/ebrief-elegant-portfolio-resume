@@ -35,9 +35,9 @@ function AboutMeSubSection({ aboutMeData }: { aboutMeData: IWhatIDo }) {
       >
         <div className="flex min-w-[110px] justify-between items-center">
           {isExpanded ? (
-            <p className="min-w-[110px]">Show less</p>
+            <p className="min-w-[110px]">{aboutMeData.knowMe.showLess}</p>
           ) : (
-            <p className="min-w-[110px]">Show more</p>
+            <p className="min-w-[110px]">{aboutMeData.knowMe.showMore}</p>
           )}
           <div onClick={toggleExpand}>
             <ArrowDownCircleIcon

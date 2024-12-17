@@ -1,4 +1,5 @@
 interface INavigation {
+  draverBtnToggleText: string;
   navLinks: { title: string; url: string }[];
 }
 

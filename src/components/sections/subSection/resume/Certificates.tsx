@@ -15,32 +15,35 @@ function Certificates({ resumeMeData }: { resumeMeData: IResume }) {
             className="flex flex-col justify-between items-start gap-2"
           >
             <div className="flex flex-col xl:flex-row justify-between w-full items-center gap-2">
-              <h3 className="text-secondary w-full text-left  xl:w-1/3">{cert.name}</h3>
+              <h3 className="text-secondary w-full text-left  xl:w-1/3">
+                {cert.name}
+              </h3>
 
               <p className=" hidden xl:flex text-primary  text-sm w-1/3 justify-center">
                 {cert.issuer} ({cert.year})
               </p>
               <div className="hidden xl:flex w-1/3  justify-end">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex items-center gap-2  w-[140px] border-primary"
-                    asChild
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex items-center gap-2  w-[140px] border-primary"
+                  asChild
+                >
+                  <Link
+                    href={cert.certLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Link
-                      href={cert.certLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <p>{resumeMeData.certificateSectionButton}</p> <ExternalLink className="h-4 w-4" />
-                    </Link>
-                  </Button>
+                    <p>{resumeMeData.certificateSectionButton}</p>{" "}
+                    <ExternalLink className="h-4 w-4" />
+                  </Link>
+                </Button>
               </div>
               <div className="flex xl:hidden flex-row justify-between w-full items-center gap-2">
-              <p className="text-primary text-sm w-1/3 xl:text-right">
-                {cert.issuer} ({cert.year})
-              </p>
-              <div className="w-1/3 flex justify-end">
+                <p className="text-primary text-sm w-1/3 xl:text-right">
+                  {cert.issuer} ({cert.year})
+                </p>
+                <div className="w-1/3 flex justify-end">
                   <Button
                     variant="outline"
                     size="sm"
@@ -52,10 +55,11 @@ function Certificates({ resumeMeData }: { resumeMeData: IResume }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <p>{resumeMeData.certificateSectionButton}</p> <ExternalLink className="h-4 w-4" />
+                      <p>{resumeMeData.certificateSectionButton}</p>{" "}
+                      <ExternalLink className="h-4 w-4" />
                     </Link>
                   </Button>
-              </div>
+                </div>
               </div>
             </div>
             <p className="text-fonts">{cert.certDescription}</p>

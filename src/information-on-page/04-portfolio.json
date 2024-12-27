@@ -14,7 +14,7 @@
         "githubLink": "https://github.com/exampledavidrivers/pixel-dungeons",
         "otherLink": "https://itch.io/pixel-dungeons-forgotten-realms",
         "image": "/images/portfolio/game-1.png",
-        "icon": "/images/icons/github.svg",
+        "icon": "/images/icons/github.svg", 
         "linkButtonTitle": "Steam",
         "githubButtonTitle": "GitHub",
         "otherButtonTitle": "Itch.io"

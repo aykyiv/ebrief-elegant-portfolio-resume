@@ -36,7 +36,7 @@ export function CarouselMenu({
     if (window.innerWidth > 768) setWidth(800);
 
     if (window.innerWidth > 768 && items.length < 6) setVisible(false);
-  }, [containerRef]);
+  }, [items.length, containerRef]);
 
   return (
     <div className="sticky top-0 w-full bg-background z-10 overflow-hidden mb-12">
@@ -54,7 +54,7 @@ export function CarouselMenu({
               width: `${items.length * ITEM_WIDTH}px`,
             }}
           >
-            {items.map((filter, index) => (
+            {items.map((filter) => (
               <Button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}

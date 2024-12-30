@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { PortfolioCard } from "./PortfolioCard";
 import { IProjectItem } from "@/interfaces/IPortfolio";
 import { CarouselMenu } from "@/components/navigation/CarouselMenu";

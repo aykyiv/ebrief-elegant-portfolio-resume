@@ -34,45 +34,76 @@ export function CarouselMenu({
 
   useEffect(() => {
     if (window.innerWidth > 768) setWidth(800);
-
     if (window.innerWidth > 768 && items.length < 6) setVisible(false);
-  }, [items.length, containerRef]);
+  }, [items.length, containerRef, currentIndex]);
 
   return (
     <div className="sticky top-0 w-full bg-background z-10 overflow-hidden mb-12">
       <div className="relative mx-auto " style={{ maxWidth: width }}>
-        <div
-          ref={containerRef}
-          onMouseDown={onMouseDown}
-          className="overflow-x-hidden "
-        >
-          <div
-            className={`flex transition-transform duration-300 ease-out gap-4  ${
-              isDragging ? "cursor-grabbing" : ""
-            }`}
-            style={{
-              width: `${items.length * ITEM_WIDTH}px`,
-            }}
-          >
-            {items.map((filter) => (
-              <Button
-                key={filter}
-                onClick={() => setActiveFilter(filter)}
-                variant={activeFilter === filter ? "default" : "outline"}
-                style={{ width: `${ITEM_WIDTH}px` }}
-                className={`
+        {/* Mobile */}
+        {width < 768 && (
+          <div ref={containerRef} className="overflow-x-hidden md:hidden flex">
+            <div
+              className={`flex transition-transform duration-300 ease-out gap-4  `}
+              style={{
+                width: `${items.length * ITEM_WIDTH}px`,
+              }}
+            >
+              {items.map((filter) => (
+                <Button
+                  key={filter}
+                  onClick={() => setActiveFilter(filter)}
+                  variant={activeFilter === filter ? "default" : "outline"}
+                  style={{ width: `${ITEM_WIDTH}px` }}
+                  className={`
                   ${
                     activeFilter === filter
                       ? "bg-primary text-white"
                       : "bg-white  hover:border-primary "
                   }
                 `}
-              >
-                <p>{filter}</p>
-              </Button>
-            ))}
+                >
+                  <p>{filter}</p>
+                </Button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
+        {/* Desktop */}
+        {width > 768 && (
+          <div
+            ref={containerRef}
+            onMouseDown={onMouseDown}
+            className="overflow-x-hidden hidden md:flex"
+          >
+            <div
+              className={`flex transition-transform duration-300 ease-out gap-4  ${
+                isDragging ? "cursor-grabbing" : ""
+              }`}
+              style={{
+                width: `${items.length * ITEM_WIDTH}px`,
+              }}
+            >
+              {items.map((filter) => (
+                <Button
+                  key={filter}
+                  onClick={() => setActiveFilter(filter)}
+                  variant={activeFilter === filter ? "default" : "outline"}
+                  style={{ width: `${ITEM_WIDTH}px` }}
+                  className={`
+                  ${
+                    activeFilter === filter
+                      ? "bg-primary text-white"
+                      : "bg-white  hover:border-primary "
+                  }
+                `}
+                >
+                  <p>{filter}</p>
+                </Button>
+              ))}
+            </div>
+          </div>
+        )}
         {currentIndex > 0 && visible && (
           <Button
             variant="outline"

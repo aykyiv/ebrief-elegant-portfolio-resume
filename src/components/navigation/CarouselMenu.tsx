@@ -32,17 +32,29 @@ export function CarouselMenu({
   const [width, setWidth] = useState(MENU_WIDTH);
   const [visible, setVisible] = useState(true);
 
-  useEffect(() => {
-    if (window.innerWidth > 768) setWidth(800);
-    if (window.innerWidth > 768 && items.length < 6) setVisible(false);
-  }, [items.length, containerRef, currentIndex]);
+useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth > 768 ? 800 : MENU_WIDTH)
+      setVisible(window.innerWidth > 768 && items.length < 6 ? false : true)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const handleClick = (filter: string, index: number) => {
+  
+      setActiveFilter(filter);
+      scrollTo(index);
+    
+  }
 
   return (
-    <div className="sticky top-0 w-full bg-background z-10 overflow-hidden mb-12">
+    <div className="w-full bg-background z-10 overflow-hidden mb-12">
       <div className="relative mx-auto " style={{ maxWidth: width }}>
         {/* Mobile */}
         {width < 768 && (
-          <div ref={containerRef} className="overflow-x-hidden md:hidden flex">
+          <div ref={containerRef} className="overflow-x-hidden md:hidden flex" >
             <div
               className={`flex transition-transform duration-300 ease-out gap-4  `}
               style={{
@@ -52,7 +64,7 @@ export function CarouselMenu({
               {items.map((filter) => (
                 <Button
                   key={filter}
-                  onClick={() => setActiveFilter(filter)}
+                  onClick={() => handleClick(filter, items.indexOf(filter))}
                   variant={activeFilter === filter ? "default" : "outline"}
                   style={{ width: `${ITEM_WIDTH}px` }}
                   className={`

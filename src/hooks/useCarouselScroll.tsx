@@ -1,71 +1,39 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 
-export const MENU_WIDTH = 355;
+export const MENU_WIDTH = 600;
 export const ITEM_WIDTH = 150;
 
-export function useCarouselScroll(itemCount: number) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
+export function useCarouselScroll() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const startX = useRef(0);
-  const scrollLeft = useRef(0);
+  const [showLeftButton, setShowLeftButton] = useState(false);
+  const [showRightButton, setShowRightButton] = useState(true);
 
-  // Calculate the maximum scrollable index
-  const maxIndex = Math.max(0, itemCount - Math.floor(MENU_WIDTH / ITEM_WIDTH));
+  const checkScroll = () => {
+    const container = containerRef.current;
+    if (!container) return;
+    setShowLeftButton(container.scrollLeft > 10);
+    setShowRightButton(
+      container.scrollLeft < container.scrollWidth - container.clientWidth - 10
+    );
+  };
 
-  // Scroll to a specific index
-  const scrollTo = useCallback(
-    (index: number) => {
-      if (containerRef.current) {
-        const newIndex = Math.max(0, Math.min(index, maxIndex));
-        containerRef.current.scrollLeft = newIndex * ITEM_WIDTH;
-        setCurrentIndex(newIndex);
-      }
-    },
-    [maxIndex]
-  );
+  const scrollTo = useCallback((direction: string) => {
+    const container = containerRef.current;
+    const scrollAmount = 150;
 
-  const onMouseDown = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    if (!containerRef.current) return;
-    setIsDragging(true);
-    startX.current = e.pageX - containerRef.current.offsetLeft;
-    scrollLeft.current = containerRef.current.scrollLeft;
-  }, []);
-
-  const onMouseUp = useCallback(() => {
-    setIsDragging(false);
-    if (containerRef.current) {
-      const currentScroll = containerRef.current.scrollLeft;
-      const nearestIndex = Math.round(currentScroll / ITEM_WIDTH);
-      scrollTo(nearestIndex);
+    if (container) {
+      container.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
     }
-  }, [scrollTo]);
-
-  const onMouseMove = useCallback(
-    (e: MouseEvent) => {
-      if (!isDragging || !containerRef.current) return;
-      const x = e.pageX - containerRef.current.offsetLeft;
-      const walk = (x - startX.current) * 2;
-      containerRef.current.scrollLeft = scrollLeft.current - walk;
-    },
-    [isDragging]
-  );
-
-  useEffect(() => {
-    document.addEventListener("mouseup", onMouseUp);
-    document.addEventListener("mousemove", onMouseMove);
-    return () => {
-      document.removeEventListener("mouseup", onMouseUp);
-      document.removeEventListener("mousemove", onMouseMove);
-    };
-  }, [onMouseUp, onMouseMove]);
+  }, []);
 
   return {
     containerRef,
-    onMouseDown,
-    isDragging,
-    currentIndex,
+    checkScroll,
     scrollTo,
-    maxIndex,
+    showLeftButton,
+    showRightButton,
   };
 }

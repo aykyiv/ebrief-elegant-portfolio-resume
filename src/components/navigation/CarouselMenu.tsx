@@ -1,9 +1,13 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ITEM_WIDTH, MENU_WIDTH, useCarouselScroll } from "@/hooks/useCarouselScroll";
+import {
+  ITEM_WIDTH,
+  MENU_WIDTH,
+  useCarouselScroll,
+} from "@/hooks/useCarouselScroll";
 
 interface CarouselMenuProps {
   items: string[];
@@ -16,7 +20,6 @@ export function CarouselMenu({
   setActiveFilter,
   activeFilter,
 }: CarouselMenuProps) {
-
   const {
     containerRef,
     checkScroll,
@@ -36,21 +39,20 @@ export function CarouselMenu({
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  });
 
   useEffect(() => {
     checkScroll();
-    containerRef.current?.addEventListener("scroll", checkScroll);
+    const containerValue = containerRef.current;
+    containerValue?.addEventListener("scroll", checkScroll);
     return () => {
-      containerRef.current?.removeEventListener("scroll", checkScroll);
+      containerValue?.removeEventListener("scroll", checkScroll);
     };
-  }, []);
+  });
 
   const handleClick = (filter: string) => {
     setActiveFilter(filter);
   };
-
- 
 
   return (
     <div className="w-full bg-background z-10 overflow-hidden mb-12">
@@ -120,7 +122,9 @@ export function CarouselMenu({
           <Button
             variant="outline"
             size="icon"
-            className={` ${showLeftButton ? "flex" : "hidden"} absolute border border-fonts left-0 top-1/2 -translate-y-1/2`}
+            className={` ${
+              showLeftButton ? "flex" : "hidden"
+            } absolute border border-fonts left-0 top-1/2 -translate-y-1/2`}
             onClick={() => scrollTo("left")}
             aria-label="Previous items"
           >
@@ -131,7 +135,9 @@ export function CarouselMenu({
           <Button
             variant="outline"
             size="icon"
-            className={` ${showRightButton ? "flex" : "hidden"} absolute border border-fonts right-0 top-1/2 -translate-y-1/2`}
+            className={` ${
+              showRightButton ? "flex" : "hidden"
+            } absolute border border-fonts right-0 top-1/2 -translate-y-1/2`}
             onClick={() => scrollTo("right")}
             aria-label="Next items"
           >
@@ -142,7 +148,9 @@ export function CarouselMenu({
           <Button
             variant="outline"
             size="icon"
-            className={` ${showLeftButton ? "flex" : "hidden"} absolute border border-fonts left-0 top-1/2 -translate-y-1/2`}
+            className={` ${
+              showLeftButton ? "flex" : "hidden"
+            } absolute border border-fonts left-0 top-1/2 -translate-y-1/2`}
             onClick={() => scrollTo("left")}
             aria-label="Previous items"
           >
@@ -153,4 +161,3 @@ export function CarouselMenu({
     </div>
   );
 }
-   

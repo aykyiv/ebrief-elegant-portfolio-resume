@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback } from "react";
 
 export const MENU_WIDTH = 600;
 export const ITEM_WIDTH = 150;
